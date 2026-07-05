@@ -108,7 +108,7 @@ const MeshGradient = () => {
       const w = canvas.width;
       const h = canvas.height;
 
-      if (mouseX > 0 && frameCount % 35 === 0) {
+      if (false) {
         spawnRipple(mouseX, mouseY);
       }
 

@@ -190,7 +190,24 @@ export const portfolioData = {
       amplificationLabel: "THE IDEA",
       category: "YouTube Series",
       tags: ["Event Marketing", "Social Media", "Brand Positioning"],
-      videoUrl: "https://youtu.be/HdUgOxr8kRY?si=OCQ-CkexDHrtUM14"
+      videoUrl: null,
+      videos: [
+        {
+          url: "https://youtu.be/HdUgOxr8kRY?si=OCQ-CkexDHrtUM14",
+          label: "Episode 1",
+          isYouTube: true
+        },
+        {
+          url: "https://youtu.be/PAuug3sQ0HE?si=77FUO5E7csqj0bB6",
+          label: "Episode 2",
+          isYouTube: true
+        },
+        {
+          url: "https://youtu.be/X766n0ySYok?si=LQvqSlTcMilCp_g-",
+          label: "Episode 3",
+          isYouTube: true
+        }
+      ]
     },
     {
       id: 404,
@@ -221,20 +238,24 @@ export const portfolioData = {
       id: 405,
       brandId: 2,
       brand: "TRIUMPH MOTORCYCLES",
-      title: "Long Copy",
+      title: "Topicals",
       year: "2025",
-      thumbnail: "triumph-longcopy",
-      shortDescription: "Insightful long copy work that got appreciated",
-      description: "Showcasing some of my topical-specific long copy work that got appreciated by both the clients and the audience.",
+      thumbnail: "triumph-topicals",
+      shortDescription: "Topical creative work for Triumph Motorcycles.",
+      description: "Showcasing some of my topical-specific creative work that got appreciated by both the clients and the audience.",
       brief: null,
       idea: null,
       amplification: null,
-      category: "Copywriting",
-      tags: ["Long Copy", "Copywriting", "Topical"],
+      category: "Topical",
+      tags: ["Topical", "Copywriting", "Social Media"],
       videoUrl: null,
       images: [
-        { url: "https://customer-assets.emergentagent.com/job_be2031ef-937f-48dc-96ce-8f18b87718c2/artifacts/jji9jhwa_image.png", label: "Father's Day" },
-        { url: "https://customer-assets.emergentagent.com/job_be2031ef-937f-48dc-96ce-8f18b87718c2/artifacts/k9ruslba_image.png", label: "International Men's Day" }
+        { url: "https://customer-assets.emergentagent.com/job_be2031ef-937f-48dc-96ce-8f18b87718c2/artifacts/jji9jhwa_image.png", label: "Father's Day 2025" },
+        { url: "https://customer-assets.emergentagent.com/job_be2031ef-937f-48dc-96ce-8f18b87718c2/artifacts/k9ruslba_image.png", label: "International Men's Day 2025" },
+        { url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/xflyjhfg_85a6e9c2-8140-4a15-b5b9-f27d6f4856b0.JPG", label: "Father's Day 2026" },
+        { url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/v4seb5w4_IMG_1536.JPG", label: "International Mountain Day 2025" },
+        { url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/o33blonf_IMG_1535.JPG", label: "International Mountain Day 2025" },
+        { url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/u9l5aqmf_IMG_1534.JPG", label: "International Mountain Day 2025" }
       ]
     },
 
@@ -279,6 +300,55 @@ export const portfolioData = {
           label: "YT Contextual Pre-roll"
         }
       ]
+    },
+
+    // AUDI INDIA - Quattro Campaign (3)
+    {
+      id: 502,
+      brandId: 3,
+      brand: "AUDI INDIA",
+      title: "That Quattro Feeling",
+      year: "2026",
+      thumbnail: "audi-quattro",
+      shortDescription: "A multi-format campaign celebrating the iconic quattro all-wheel drive system.",
+      description: "A visual campaign that captures the raw, visceral feeling of quattro — Audi's legendary all-wheel drive system. From social posts to massive OOH installations across airports and cityscapes, the campaign brought the spirit of quattro to life through landscapes that demand grip, control, and confidence.",
+      briefLabel: "THE BRIEF",
+      brief: "Communicate the superiority and feeling of Audi's quattro all-wheel drive system through a visually arresting campaign.",
+      ideaLabel: "THE IDEA",
+      idea: "The tech behind quattro is interesting. But the benefit lies in the feeling you get when you drive one. In every single scenario, the car is not the hero - it's enabling you to become one. Hence, 'that quattro feeling' is more about you, the Audi driver, than the meticulously-put-together tech behind quattro.",
+      amplificationLabel: "THE AMPLIFICATION",
+      amplification: "The campaign was amplified across social media and large-format OOH installations at key airports and high-traffic urban locations, creating an immersive brand presence that matched the scale of the quattro experience.",
+      category: "Integrated Campaign",
+      tags: ["OOH", "Social Media", "Brand Campaign", "quattro", "All-Wheel Drive"],
+      videoUrl: null,
+      tagline: "That quattro feeling.",
+      images: [
+        {
+          url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/9rmxiqev_PHOTO-2026-06-18-17-53-14.jpg",
+          label: "Social"
+        },
+        {
+          url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/hdsa53po_PHOTO-2026-06-19-16-07-28.jpg",
+          label: "Social"
+        },
+        {
+          url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/riui5ru3_PHOTO-2026-06-19-16-07-51.jpg",
+          label: "Social"
+        },
+        {
+          url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/vxujcuoi_3FC2A9FE-2F7B-4F05-8043-C6C5FBF23AEB.JPG",
+          label: "OOH — Mumbai Airport T2"
+        },
+        {
+          url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/myeac7dc_CB324034-06D2-47FD-9A46-EBF0E14A55BE.JPG",
+          label: "OOH — Delhi Airport T3"
+        },
+        {
+          url: "https://customer-assets.emergentagent.com/job_50bffa23-0c3c-49a3-97b7-a67e70146591/artifacts/dqttwkdc_EC1FFB78-D955-4423-8650-3ABA233F701C.JPG",
+          label: "OOH — Western Express Highway, Mumbai"
+        }
+      ],
+      videos: []
     },
 
     // BIRLA ESTATES (6)

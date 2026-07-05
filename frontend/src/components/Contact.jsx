@@ -25,7 +25,6 @@ const Contact = () => {
             Contact
           </h1>
           <p className="text-white/50 text-lg font-light">
-            If you've made it this far, maybe we're thinking the same thing.
           </p>
         </div>
 
@@ -83,11 +82,11 @@ const Contact = () => {
                   <Mail className="text-white/60 group-hover:text-white/90 transition-colors" size={36} strokeWidth={1.5} />
                 </div>
               </div>
-              <div className="text-[0.65rem] text-white/30 tracking-[0.2em] uppercase mb-4">Email</div>
+              <div className="text-xs text-white/45 tracking-[0.2em] uppercase mb-4">Email</div>
               <span className="text-lg md:text-xl text-white/85 group-hover:text-white transition-colors block mb-3 break-all">
                 {data.email}
               </span>
-              <p className="text-sm text-white/30 font-light">Within 24 hours</p>
+              <p className="text-sm text-white/40">Within 24 hours</p>
             </a>
 
             {/* Phone */}
@@ -114,11 +113,11 @@ const Contact = () => {
                   <Phone className="text-white/60 group-hover:text-white/90 transition-colors" size={36} strokeWidth={1.5} />
                 </div>
               </div>
-              <div className="text-[0.65rem] text-white/30 tracking-[0.2em] uppercase mb-4">Phone</div>
+              <div className="text-xs text-white/45 tracking-[0.2em] uppercase mb-4">Phone</div>
               <span className="text-lg md:text-xl text-white/85 group-hover:text-white transition-colors block mb-3">
                 {data.phone}
               </span>
-              <p className="text-sm text-white/30 font-light">Mon - Fri, 9 AM - 6 PM</p>
+              <p className="text-sm text-white/40">Mon - Fri, 9 AM - 6 PM</p>
             </a>
           </div>
 
@@ -127,7 +126,7 @@ const Contact = () => {
             <p className="text-white/60 text-lg mb-2 font-light">
               Thank you for your interest.
             </p>
-            <p className="text-white/40 text-base font-light">
+            <p className="text-white/50 text-base">
               Looking forward to connecting soon.
             </p>
           </div>
@@ -135,7 +134,7 @@ const Contact = () => {
 
         {/* Footer pun */}
         <div className="mt-24 text-center">
-          <p className="text-white/30 text-sm font-light italic">
+          <p className="text-white/40 text-sm font-light italic">
             This line is never busy. Just call.
           </p>
         </div>

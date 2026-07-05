@@ -36,10 +36,10 @@ const BrandView = () => {
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-4 metallic-text tracking-tight" data-testid="brand-title">
             {brand.name}
           </h1>
-          <p className="text-lg text-white/50 font-light max-w-xl mx-auto mb-6">
+          <p className="text-lg text-white/60 font-light max-w-xl mx-auto mb-6">
             {brand.description}
           </p>
-          <p className="text-white/30 text-xs tracking-[0.2em] uppercase font-light">
+          <p className="text-white/40 text-xs tracking-[0.2em] uppercase font-light">
             {projects.length} recording{projects.length !== 1 ? 's' : ''} available
           </p>
         </div>
@@ -47,7 +47,7 @@ const BrandView = () => {
         {/* Back Button */}
         <button
           onClick={() => navigate('/', { state: { scrollToKeypad: true } })}
-          className="flex items-center gap-2 text-white/40 hover:text-white/70 transition-colors mb-16 text-xs font-light tracking-wide"
+          className="flex items-center gap-2 text-white/50 hover:text-white/80 transition-colors mb-16 text-xs font-light tracking-wide"
           data-testid="brand-back-button"
         >
           <ArrowLeft size={16} />
@@ -90,12 +90,12 @@ const BrandView = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-white/45 font-light leading-relaxed mb-6 flex-grow">
+                <p className="text-sm text-white/55 font-light leading-relaxed mb-6 flex-grow">
                   {project.shortDescription}
                 </p>
 
                 {/* Category & Year */}
-                <div className="flex justify-between items-center text-[0.7rem] text-white/30 pt-5 border-t border-white/[0.06] tracking-wide">
+                <div className="flex justify-between items-center text-[0.7rem] text-white/40 pt-5 border-t border-white/[0.06] tracking-wide">
                   <span className="uppercase">{project.category}</span>
                   <span className="font-mono">{project.year}</span>
                 </div>
@@ -103,7 +103,7 @@ const BrandView = () => {
                 {/* Video indicator */}
                 {project.videoUrl && (
                   <div className="mt-4 pt-4 border-t border-white/[0.06]">
-                    <span className="text-[0.65rem] text-white/35 flex items-center gap-2 tracking-[0.1em] uppercase">
+                    <span className="text-[0.65rem] text-white/45 flex items-center gap-2 tracking-[0.1em] uppercase">
                       <span className="text-green-400/60">&#9654;</span>
                       Video available
                     </span>

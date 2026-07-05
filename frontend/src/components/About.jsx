@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
 const cards = [
-  "A dedicated writer and content strategist with 4+ years of experience, working with a plethora of national and international brands.",
+  "A dedicated writer and content strategist with 5 years of experience, working with a plethora of national and international brands.",
   "I believe in INSIGHTFUL CREATION. The simplest of insights can house a goldmine of ideas.",
   "Starting off as a treatment note writer for ad films, I pivoted to advertising because I wanted to start at the source, solving real problems for brands.",
-  "Now, with over a year's experience of managing cross-functional teams, I've spent my time working with design, strategy and production to deliver end-to-end creative solutions.",
-  "This website mirrors my creative process. The calm waters of the mind, gently disturbed by ripples of creative chaos as you explore with curiosity.",
+  "Now, I manage cross-functional teams, spending my time working with design, strategy and production to deliver end-to-end creative solutions.",
+  "This website mirrors my creative process. The calm waters of the mind, gently disturbed by ripples of creative chaos as you explore curiously.",
   "Feel like building something together? Press # to connect with me.",
 ];
 
@@ -109,7 +109,7 @@ const About = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-2 metallic-text tracking-tight">
               Who I Am
             </h1>
-            <p className="text-white/35 text-xs tracking-[0.25em] uppercase font-light">My Story</p>
+            <p className="text-white/45 text-xs tracking-[0.25em] uppercase">My Story</p>
           </div>
           <button
             onClick={() => navigate('/', { state: { scrollToKeypad: true } })}
@@ -184,7 +184,7 @@ const About = () => {
 
       {/* Footer tagline */}
       <div className="flex-shrink-0 pb-12 text-center px-6">
-        <p className="text-sm text-white/30 font-light tracking-[0.08em]">
+        <p className="text-sm text-white/40 font-light tracking-[0.08em]">
           I <span className="text-white/55">sho</span> up for the truth. I <span className="text-white/55">sho</span> up for good storytelling.
         </p>
       </div>

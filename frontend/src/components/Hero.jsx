@@ -70,28 +70,28 @@ const Hero = () => {
         <div className="text-center">
           {/* Name Section */}
           <div className="mb-16">
-            <p className="text-white/35 text-[0.65rem] tracking-[0.4em] uppercase font-light mb-10">on the line</p>
+            <p className="text-white/50 text-[0.7rem] tracking-[0.4em] uppercase font-light mb-10">Creative Helpline</p>
             
-            <div className="leading-none" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif' }}>
+            <div className="flex flex-col items-center gap-6">
               <p 
                 className="text-white/80 uppercase"
                 style={{ 
                   fontSize: 'clamp(1.8rem, 4vw, 3.2rem)',
-                  fontWeight: '300',
+                  fontWeight: '400',
                   letterSpacing: '0.55em',
                 }}
               >
                 Souhitya
               </p>
               <h1
-                className="my-6"
                 style={{
-                  fontSize: 'clamp(5.5rem, 16vw, 14rem)',
-                  fontWeight: '800',
+                  fontFamily: "'Press Start 2P', cursive",
+                  fontSize: 'clamp(5rem, 14vw, 12rem)',
+                  fontWeight: '400',
                   letterSpacing: '0.12em',
                   color: 'transparent',
                   WebkitTextStroke: '2.5px rgba(255,255,255,0.75)',
-                  lineHeight: '0.85',
+                  lineHeight: '1',
                   filter: 'drop-shadow(0 0 80px rgba(160,220,210,0.12)) drop-shadow(0 0 30px rgba(180,230,220,0.08))',
                 }}
               >
@@ -101,7 +101,7 @@ const Hero = () => {
                 className="text-white/80 uppercase"
                 style={{ 
                   fontSize: 'clamp(1.8rem, 4vw, 3.2rem)',
-                  fontWeight: '300',
+                  fontWeight: '400',
                   letterSpacing: '0.55em',
                 }}
               >
@@ -109,56 +109,44 @@ const Hero = () => {
               </p>
             </div>
 
-            <p className="text-white/35 text-[0.6rem] tracking-[0.3em] uppercase font-light mt-8 mb-6">
+            <p className="text-white/50 text-[0.65rem] tracking-[0.3em] uppercase font-light mt-10 mb-6">
               Creative Lead / Content Strategist
             </p>
 
             <div className="inline-flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-green-400" style={{ boxShadow: '0 0 8px rgba(74,222,128,0.5)' }}></div>
-              <span className="text-white/40 text-[0.65rem] font-mono tracking-[0.15em]">
+              <span className="text-white/55 text-[0.65rem] font-mono tracking-[0.15em]">
                 {isConnecting ? 'connecting...' : 'connected'}
               </span>
             </div>
           </div>
 
-          {/* Tagline */}
-          <div className="mb-20">
-            <p className="text-xl md:text-2xl text-white/90 font-light tracking-wide">
-              I write copy. The rest the copy does for itself.
-            </p>
-          </div>
-
           {/* Continuous Scrolling Ticker */}
-          <div className="ticker-wrap mb-20">
+          <div className="ticker-wrap mb-16">
             <div className="ticker">
               <span className="ticker-item">Welcome to the 'SHO'verse, where we 'SHO' up for good storytelling // You've reached the department of better thinking // We don't put ideas on hold // All our lines are busy. Thinking // We apologise for the wait. Good ideas take longer //</span>
             </div>
           </div>
 
+          {/* Tagline */}
+          <div className="mb-16">
+            <p className="text-base md:text-lg text-white/70 font-light tracking-wide leading-relaxed">
+              Hi, I'm Souhitya (I know, just call me SHO). And I have a (fairly) easy job.
+            </p>
+            <p className="text-base md:text-lg text-white/90 font-semibold tracking-wide leading-relaxed">
+              I write copy. The rest the copy does for itself.
+            </p>
+          </div>
+
           {/* Phone Keypad */}
           <div className="mb-16" ref={keypadRef}>
-            <p className="text-sm tracking-[0.15em] text-white/50 font-light mb-2">
+            <p className="text-sm tracking-[0.15em] text-white/50 font-light mb-1">
               Thank you for calling. Let's connect you to some interesting work.
             </p>
-            <p className="text-sm tracking-[0.25em] text-white/60 uppercase font-light mb-8">
+            <p className="text-sm tracking-[0.25em] text-white/50 uppercase font-light mb-8">
               Dial away
             </p>
             <PhoneKeypad onKeyPress={handleKeyPress} disabled={isConnecting} />
-            <div className="mt-10 max-w-lg mx-auto text-[0.7rem] font-light tracking-[0.08em] text-white/30">
-              <div className="grid grid-cols-2 gap-x-10 gap-y-1">
-                <p>Press <span className="font-mono text-white/50">1</span> for <span className="text-white/45">CAMPUS SHOES</span></p>
-                <p>Press <span className="font-mono text-white/50">2</span> for <span className="text-white/45">TRIUMPH MOTORCYCLES</span></p>
-                <p>Press <span className="font-mono text-white/50">3</span> for <span className="text-white/45">AUDI</span></p>
-                <p>Press <span className="font-mono text-white/50">4</span> for <span className="text-white/45">HAVMOR ICE CREAMS</span></p>
-                <p>Press <span className="font-mono text-white/50">5</span> for <span className="text-white/45">CASTROL</span></p>
-                <p>Press <span className="font-mono text-white/50">6</span> for <span className="text-white/45">BIRLA ESTATES</span></p>
-              </div>
-              <p className="text-center text-white/50 text-[0.7rem] tracking-[0.2em] italic mt-3 pt-3 border-t border-white/6 mb-2">Like what you see?</p>
-              <div className="flex justify-center gap-10">
-                <p>Press <span className="font-mono text-white/50">*</span> for <span className="text-white/45">ABOUT</span></p>
-                <p>Press <span className="font-mono text-white/50">#</span> for <span className="text-white/45">CONTACT INFORMATION</span></p>
-              </div>
-            </div>
           </div>
 
           {/* Footer */}
